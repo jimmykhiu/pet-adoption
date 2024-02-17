@@ -34,11 +34,11 @@ async function petsArea() {
 petsArea()
 
 function createAgeText(birthYear) {
-  const currentYear = new Date()
+  const currentYear = new Date().getFullYear()
   const age = currentYear - birthYear
+
   if (age == 1) return "1 year old"
   if (age == 0) return "Less than a year old"
 
   return `${age} years old`
-
 }
